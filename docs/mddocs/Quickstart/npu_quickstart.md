@@ -117,18 +117,27 @@ For `ipex-llm` NPU support, please set the following environment variable with a
 
   - For Intel Core™ Ultra 5 Processor 228V & 226V:
       ```cmd
+      # For Linux
       set IPEX_LLM_NPU_DISABLE_COMPILE_OPT=1
+      # For Win
+      $env:IPEX_LLM_NPU_DISABLE_COMPILE_OPT=1
       ```
 
 - For **Intel Core™ Ultra Processors (Series 2) with processor number 2xxK or 2xxH (code name Arrow Lake)**:
    ```cmd
+   # For Linux
    set IPEX_LLM_NPU_ARL=1
+   # For Win
+   $env:IPEX_LLM_NPU_ARL=1
    ```
 
 - For **Intel Core™ Ultra Processors (Series 1) with processor number 1xxH (code name Meteor Lake)**:
 
    ```cmd
+   # For Linux
    set IPEX_LLM_NPU_MTL=1
+   # For Win
+   $env:IPEX_LLM_NPU_MTL=1
    ```
 
 ## Python API
